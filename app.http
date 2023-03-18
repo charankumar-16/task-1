@@ -1,0 +1,45 @@
+// API 1 registration 
+
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam",
+  "password": "richard_56",
+  "email": "adam@gmail.com"
+}
+###
+
+//API 2 login with password
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"adam",
+  "password":"adam12"
+}
+###
+
+// API 3 Forgot password
+POST http://localhost:3000/forgotPassword/
+Content-Type: application/json
+
+{
+    "email": "adam@gmail.com"
+}
+
+###
+
+//Link is sended to the mail with Token as parameter from the above API 
+
+
+
+//After submitting the form 
+POST http://localhost:3000/UpdatePassword/
+Content-Type: application/json
+
+{
+    "email": "adam@gmail.com",
+    "password": "adam12"
+}
